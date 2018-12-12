@@ -1,0 +1,20 @@
+header {
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav a {
+    color: var(--white);
+    font-size: 1em;
+}
+
+/* Main Layout for Mobile */
+@media(max-width:768px) {
+    nav a {
+    }
+
+}

@@ -1,0 +1,26 @@
+/* Panel Colors */
+#about {
+    background-color: var(--lightgray);
+    color: var(--black);
+}
+#project-1 {
+    background-color: var(--purple);
+    color: var(--white);
+}
+#project-2 {
+    background-color: var(--lavender);
+    color: var(--white);
+}
+#project-3 {
+    background-color: var(--teal);
+    color: var(--black);
+}
+#project-4 {
+    background-color: var(--moss);
+    color: var(--black);
+
+}
+#project-5 {
+    background-color: var(--tea);
+    color: var(--black);
+}

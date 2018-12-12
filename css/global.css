@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all .3s ease 0s;
+}
+
+div {
+    display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: "Megrim";
+}
+
+body {
+    font-family: "Raleway";
+}
+
+i {
+    font-size: 1.5em;
+    padding: 0px 10px;
+}
+
+/* Main Layout for Desktop */
+
+header {
+    height: 5vh;
+}
+
+main.container {
+    display: flex;
+    width: 100vw;
+    height: 95vh;
+    justify-content: flex-end;
+}
+
+section {
+    padding: 10px;
+    width: auto;
+    transition: width 5s;
+
+}
+
+#about {
+    flex-grow: 1;
+}
+
+/* Hover Interaction */
+body > div + div:hover article {flex: initial; width: 10%;}
+body > main + section:hover {width: 90%;}
+section > article {
+    opacity: 0; 
+    transition: opacity .2s ease 0;
+}
+
+section:hover > article {
+    opacity: 1; 
+    transition: opacity .3s ease .3s;}
+
+section:hover {
+    width: 95vw;
+}
+
+
+
+/* Main Layout for Mobile */
+@media(max-width:768px) {
+
+    main.container {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    section:hover {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+
+
+
