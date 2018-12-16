@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: var(--darkpurple);
+}
+
+div {
+    display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: "Megrim";
+  margin-bottom: 10px;
+}
+
+body {
+    font-family: "Raleway";
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* //////////////////////////////////// */
+/* Main Layout for Desktop */
+/* //////////////////////////////////// */
+
+header {
+    height: 10vh;
+}
+
+main.container {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    justify-content: flex-end;
+}
+
+/* //////////////////////////////////// */
+/* Main Layout for Tablet */
+/* //////////////////////////////////// */
+@media(max-width:768px) {
+
+    /* main.container {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    section:hover {
+        width: 100vw;
+        height: 100vh;
+    } */
+}
+
+/* //////////////////////////////////// */
+/* Main Layout for Mobile */
+/* //////////////////////////////////// */
+@media(max-width:736px) {
+
+    /* main.container {
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    section:hover {
+        width: 100vw;
+        height: 100vh;
+    } */
+}
+
+
+
+

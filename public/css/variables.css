@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Megrim|Raleway');
+
+:root {
+    --black: #0F080F;
+    --white: #fff;
+    --lightgray: #eee;
+    --darkgray: #333;
+    --darkpurple: #2C182D;
+    --purple: #502c51;
+    --lavender: #635373;
+    --teal: #7db0a8;
+    --moss: #a8daac;
+    --tea: #cfead1;
+}

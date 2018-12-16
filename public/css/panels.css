@@ -1,0 +1,179 @@
+main.container {
+    position: absolute;
+    top: 10vh;
+}
+
+article {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+
+
+/* //////////////////////////////////// */
+/* Colors */
+/* //////////////////////////////////// */
+#about {
+    background-color: var(--darkpurple);
+    color: var(--tea);
+}
+#project-1 {
+    background-color: var(--purple);
+    color: var(--tea);
+}
+#project-2 {
+    background-color: var(--lavender);
+    color: var(--tea);
+}
+#project-3 {
+    background-color: var(--teal);
+    color: var(--black);
+}
+#project-4 {
+    background-color: var(--moss);
+    color: var(--black);
+
+}
+#project-5 {
+    background-color: var(--tea);
+    color: var(--black);
+}
+
+/* //////////////////////////////////// */
+/* Panels */
+/* //////////////////////////////////// */
+
+section {
+    padding: 10px;
+    width: 3vw;
+    transition: width 2s;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.label {
+    position: fixed;
+    bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* //////////////////////////////////// */
+/* Hover Interaction */
+/* //////////////////////////////////// */
+
+body > div + div:hover article {
+    flex: initial; 
+    width: 10%;
+}
+section:hover {
+    width: 85%;
+}
+section > article {
+    opacity: 0; 
+    transition: opacity 1s ease 0s;
+}
+
+section:hover > article {
+    opacity: 1; 
+    transition: opacity 1s ease .5s;}
+
+
+/* //////////////////////////////////// */
+/* Project Content */
+/* //////////////////////////////////// */
+
+.project-img {
+    align-items: flex-start;
+    justify-content: center;
+}
+.project-img img {
+    width: 600px;
+}
+
+.project-copy {
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.project-copy p {
+    width: 400px;
+}
+
+.project-copy a,
+.project-copy a:visited,
+.project-copy a:active,
+ {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+/* //////////////////////////////////// */
+/* Buttons */
+/* //////////////////////////////////// */
+
+.panel-btn {
+    cursor: pointer;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 20px;
+    width: fit-content;
+    text-transform: uppercase;
+    border: 2px solid var(--tea);
+    margin: 0px 10px 40px 0px;
+    text-decoration: none;
+}
+
+.purple-panel {
+    background: transparent;
+    color: var(--tea);
+}
+
+.purple-panel:hover {
+    background: var(--tea);
+    color: var(--purple);
+}
+
+.lavender-panel {
+    background: transparent;
+    color: var(--tea);
+}
+
+.lavender-panel:hover {
+    background: var(--tea);
+    color: var(--lavender);
+}
+
+.teal-panel {
+    background: transparent;
+    color: var(--black);
+}
+
+.teal-panel:hover {
+    background: var(--black);
+    color: var(--teal);
+}
+
+.moss-panel {
+    background: transparent;
+    color: var(--black);
+}
+
+.moss-panel:hover {
+    background: var(--black);
+    color: var(--moss);
+}
+
+.tea-panel {
+    background: transparent;
+    color: var(--black);
+}
+
+.tea-panel:hover {
+    background: var(--black);
+    color: var(--tea);
+}

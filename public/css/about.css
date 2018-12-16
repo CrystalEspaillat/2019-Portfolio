@@ -1,0 +1,148 @@
+#about {
+  flex-direction: row;
+  position: fixed;
+  padding-right: 30vh;
+}
+
+/* //////////////////////////////////// */
+/* Section Text */
+/* //////////////////////////////////// */
+
+.about-content {
+    /*The copy*/
+    margin: 30px;
+    flex-direction: column;
+    color: var(--tea);
+}
+
+h1{
+    margin-bottom: 0px;
+}
+
+h6 {
+    font-size: 5em;
+    line-height: 1em;
+    margin: 50px 0px;
+}
+
+p {
+    color: var(--tea);
+}
+
+
+/* //////////////////////////////////// */
+/* Image */
+/* //////////////////////////////////// */
+
+.about-img {
+    width: 40vw;
+    height: 90vh;
+    background-image: url("/public/img/bwheadshot.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 50px;
+}
+
+
+/* //////////////////////////////////// */
+/* Buttons */
+/* //////////////////////////////////// */
+
+.about-pg-btn {
+    cursor: pointer;
+    font-family: "Raleway";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-right: 40px;
+    width: fit-content;
+    border: 2px solid var(--tea);
+    background: var(--darkpurple);
+    color: var(--tea);
+}
+
+.about-pg-btn:hover {
+    background: var(--tea);
+    color: var(--darkpurple);
+
+}
+
+/* //////////////////////////////////// */
+/* Social Icons */
+/* //////////////////////////////////// */
+
+.social-bar {
+    align-items: flex-end;
+    margin: 40px 10px;
+    padding: 10px;
+}
+
+i {
+    font-size: 1.5em;
+}
+
+.icon {
+    width:50px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.linkedin {
+    cursor: pointer;
+    color: var(--lavendar);
+    border: 2px solid var(--lavender);
+}
+
+.linkedin a:link, 
+.linkedin a:active,
+.linkedin a:visited {
+    color: var(--lavender);
+}
+
+.github {
+    cursor: pointer;
+    color: var(--teal);
+    border: 2px solid var(--teal);
+}
+
+.github a:link, 
+.github a:active,
+.github a:visited {
+    color: var(--teal);
+}
+
+.github:hover + .social {
+    background: var(--teal);
+    color: var(--darkpurple);
+}
+
+.twitter {
+    cursor: pointer;
+    color: var(--moss);
+    border: 2px solid var(--moss);
+}
+
+.twitter a:link, 
+.twitter a:active,
+.twitter a:visited {
+    color: var(--moss);
+}
+
+.codepen {
+    cursor: pointer;
+    color: var(--tea);
+    border: 2px solid var(--tea);
+}
+
+.codepen a:link, 
+.codepen a:active,
+.codepen a:visited {
+    color: var(--tea);
+}
