@@ -9,12 +9,13 @@ var path = require("path");
 
 var app = express();
 
-app.use('/static', express.static(path.join(__dirname, 'public')))
+app.use("/public", express.static(__dirname + '/public'));
+
 
 //////////////////////////////////// 
 // ROUTER
 
-app.get('/', function(req, res) {
+app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
@@ -22,7 +23,7 @@ app.get('/', function(req, res) {
 // LISTENER
 
 // Sets an initial port. We"ll use this in our listener
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 5000;
 
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
