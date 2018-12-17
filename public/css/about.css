@@ -1,7 +1,6 @@
 #about {
   flex-direction: row;
-  position: fixed;
-  padding-right: 40vh;
+  flex-grow: 1;
 }
 
 /* //////////////////////////////////// */
@@ -121,10 +120,10 @@ i {
     border: 2px solid var(--lavender);
 }
 
-.linkedin a:link, 
-.linkedin a:active,
-.linkedin a:visited {
-    color: var(--lavender);
+.linkedin:hover {
+    color: var(--darkpurple);
+    border: 2px solid transparent;
+    background: var(--lavender);
 }
 
 .github {
@@ -133,10 +132,10 @@ i {
     border: 2px solid var(--teal);
 }
 
-.github a:link, 
-.github a:active,
-.github a:visited {
-    color: var(--teal);
+.github:hover {
+    color: var(--darkpurple);
+    border: 2px solid transparent;
+    background: var(--teal);
 }
 
 .twitter {
@@ -145,10 +144,10 @@ i {
     border: 2px solid var(--moss);
 }
 
-.twitter a:link, 
-.twitter a:active,
-.twitter a:visited {
-    color: var(--moss);
+.twitter:hover {
+    color: var(--darkpurple);
+    border: 2px solid transparent;
+    background: var(--moss);
 }
 
 .codepen {
@@ -157,8 +156,8 @@ i {
     border: 2px solid var(--tea);
 }
 
-.codepen a:link, 
-.codepen a:active,
-.codepen a:visited {
-    color: var(--tea);
+.codepen:hover {
+    color: var(--darkpurple);
+    border: 2px solid transparent;
+    background: var(--tea);
 }

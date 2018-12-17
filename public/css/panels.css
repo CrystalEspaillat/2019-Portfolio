@@ -3,7 +3,7 @@ main {
     position: absolute;
     top: 11vh;
     right: 0px;
-    width: 15vw;
+    width: 100vw;
     display: flex;
     justify-content: flex-end;
     height: 100vh;
@@ -25,36 +25,6 @@ article {
 }
 
 /* //////////////////////////////////// */
-/* Hover Interaction */
-/* //////////////////////////////////// */
-
-/* Holds all of the panels */
-main:hover {
-    width:100vw;
-}
-
-/* the panels */
-section {
-    width: 3vw;
-    transition: width 1s;
-}
-
-section:hover {
-    width:85vw;
-    transition: ease 1s;
-}
-
-/* The content inside of the panel */
-section > article {
-    opacity: 0; 
-    transition: opacity 1s ease 0s;
-}
-
-section:hover > article {
-    opacity: 1; 
-    transition: opacity 1s ease .5s;}
-
-/* //////////////////////////////////// */
 /* Project Content */
 /* //////////////////////////////////// */
 
@@ -62,8 +32,7 @@ section:hover > article {
 .label {
     align-items: center;
     justify-content: flex-start;
-    font-family: "Megrim";
-    font-weight: bold;
+    font-family: "Raleway";
     font-size: 14pt;
     transform: rotate(90deg);
     transform-origin: left bottom 0;
@@ -90,13 +59,9 @@ section:hover > article {
     width: 400px;
 }
 
-.project-copy a,
-.project-copy a:visited,
-.project-copy a:active,
- {
-    text-decoration: none;
-    color: var(--purple);
-    font-weight: bold;
+/* Text link */
+.colleagues {
+    color: var(--tea);
 }
 
 /* //////////////////////////////////// */
