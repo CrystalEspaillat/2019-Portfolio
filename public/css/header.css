@@ -1,15 +1,19 @@
 header {
     background: var(--black);
-    color: var(--white);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px;
+    height: 11vh;
 }
 
-nav a {
-    color: var(--white);
-    font-size: 1em;
+header a {
+    color: var(--tea);
+    text-decoration: none;
+}
+
+header h1 {
+    margin-bottom: 0px;
 }
 
 /* Main Layout for Mobile */

@@ -1,63 +1,27 @@
-main.container {
+/* Holds all of the panels */
+main {
     position: absolute;
-    top: 10vh;
+    top: 11vh;
     right: 0px;
-    width: 10vw;
-}
-
-article {
+    width: 15vw;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 50px;
+    justify-content: flex-end;
+    height: 100vh;
 }
 
-/* //////////////////////////////////// */
-/* Colors */
-/* //////////////////////////////////// */
-#about {
-    background-color: var(--darkpurple);
-}
-#project-1 {
-    background-color: var(--purple);
-}
-#project-2 {
-    background-color: var(--lavender);
-}
-
-#about, #project-1, #project-2 {
-    color: var(--tea);
-}
-
-#project-3 {
-    background-color: var(--teal);
-}
-#project-4 {
-    background-color: var(--moss);
-}
-#project-5 {
-    background-color: var(--tea);
-}
-
-#project-3, #project-4, #project-5 {
-    color: var(--black);
-}
-
-/* //////////////////////////////////// */
-/* Panels */
-/* //////////////////////////////////// */
-
+/* The panels */
 section {
     padding: 10px;
     align-items: flex-start;
     justify-content: center;
 }
 
-.label {
-    position: fixed;
-    bottom: 10px;
-    align-items: center;
-    justify-content: center;
+/* The content inside of the panels */
+article {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px;
 }
 
 /* //////////////////////////////////// */
@@ -69,7 +33,7 @@ main:hover {
     width:100vw;
 }
 
-/* the pantels */
+/* the panels */
 section {
     width: 3vw;
     transition: width 1s;
@@ -90,10 +54,23 @@ section:hover > article {
     opacity: 1; 
     transition: opacity 1s ease .5s;}
 
-
 /* //////////////////////////////////// */
 /* Project Content */
 /* //////////////////////////////////// */
+
+/* Text label for each project */
+.label {
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Megrim";
+    font-weight: bold;
+    font-size: 14pt;
+    transform: rotate(90deg);
+    transform-origin: left bottom 0;
+    float: left;
+    width: 400px;
+    position: absolute;
+}
 
 .project-img {
     align-items: flex-start;
@@ -119,6 +96,50 @@ section:hover > article {
  {
     text-decoration: none;
     color: var(--purple);
+    font-weight: bold;
+}
+
+/* //////////////////////////////////// */
+/* Colors */
+/* //////////////////////////////////// */
+
+/* Dark Panels */
+#about {
+    background-color: var(--darkpurple);
+}
+#project-1 {
+    background-color: var(--purple);
+}
+#project-2 {
+    background-color: var(--lavender);
+}
+
+#about, #project-1, #project-2 {
+    color: var(--tea);
+}
+
+#project-1 p, #project-2 p {
+    color: var(--tea);
+}
+
+/* Light Panels */
+
+#project-3 {
+    background-color: var(--teal);
+}
+#project-4 {
+    background-color: var(--moss);
+}
+#project-5 {
+    background-color: var(--tea);
+}
+
+#project-3, #project-4, #project-5 {
+    color: var(--darkpurple);
+}
+
+#project-3 p, #project-4 p, #project-5 p {
+    color: var(--darkpurple);
 }
 
 /* //////////////////////////////////// */
@@ -133,13 +154,13 @@ section:hover > article {
     padding: 10px 20px;
     width: fit-content;
     text-transform: uppercase;
-    border: 2px solid var(--tea);
     margin: 0px 10px 40px 0px;
     text-decoration: none;
 }
 
 .purple-panel {
     background: transparent;
+    border: 2px solid var(--tea);
     color: var(--tea);
 }
 
@@ -150,6 +171,7 @@ section:hover > article {
 
 .lavender-panel {
     background: transparent;
+    border: 2px solid var(--tea);
     color: var(--tea);
 }
 
@@ -160,30 +182,33 @@ section:hover > article {
 
 .teal-panel {
     background: transparent;
-    color: var(--black);
+    border: 2px solid var(--darkpurple);
+    color: var(--darkpurple);
 }
 
 .teal-panel:hover {
-    background: var(--black);
+    background: var(--darkpurple);
     color: var(--teal);
 }
 
 .moss-panel {
     background: transparent;
-    color: var(--black);
+    border: 2px solid var(--darkpurple);
+    color: var(--darkpurple);
 }
 
 .moss-panel:hover {
-    background: var(--black);
+    background: var(--darkpurple);
     color: var(--moss);
 }
 
 .tea-panel {
     background: transparent;
-    color: var(--black);
+    border: 2px solid var(--darkpurple);
+    color: var(--darkpurple);
 }
 
 .tea-panel:hover {
-    background: var(--black);
+    background: var(--darkpurple);
     color: var(--tea);
 }
