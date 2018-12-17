@@ -3,6 +3,7 @@
 
 var express = require("express");
 var path = require("path");
+var fs = require("file-system");
 
 //////////////////////////////////// 
 // EXPRESS CONFIGURATION
@@ -17,12 +18,14 @@ var PORT = process.env.PORT || 5000;
 //////////////////////////////////// 
 // ROUTER
 
-app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/index.html'));
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
-app.get('/resume', function(req, res) {
-  res.sendFile(path.join(__dirname + '/public/assets/crytalespaillat-resume.pdf'));
+app.get('/resume', function (req, res) {
+  var data = fs.readFileSync('./public/assets/crystalespaillat-resume.pdf');
+  res.contentType("application/pdf");
+  res.send(data);
 });
 
 //////////////////////////////////// 
