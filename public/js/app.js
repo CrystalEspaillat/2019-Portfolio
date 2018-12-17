@@ -8,6 +8,17 @@ $(document).ready(function() {
         $("#about").removeClass("hover");
     });
 
+    // Click event for mail
+    $(".resume").on("click", function() {
+        window.location = "/resume";        
+    });
+
+    // Click event for mail
+    $(".contact").on("click", function() {
+        window.location = "mailto:crys.espaillat@gmail.com";        
+    });
+
+
     //Click event for social link divs
 
     $(".linkedin").on("click", function() {

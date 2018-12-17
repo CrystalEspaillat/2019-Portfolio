@@ -93,6 +93,34 @@ p {
 }
 
 /* //////////////////////////////////// */
+/* Resume & Envelope */
+/* //////////////////////////////////// */
+
+.cta-icons {
+    background-size: cover;
+    width: 114px;
+    height: 114px;
+    cursor: pointer;
+}
+
+.resume {
+    background-image: url("/public/img/resume.png");
+}
+
+.resume:hover {
+    background-image:url("/public/img/resume-hover.png");
+}
+
+.contact {
+    background-image: url("/public/img/mail.png");
+}
+
+.contact:hover {
+    background-image:url("/public/img/mail-hover.png");
+}
+
+
+/* //////////////////////////////////// */
 /* Social Icons */
 /* //////////////////////////////////// */
 
