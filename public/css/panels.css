@@ -1,6 +1,8 @@
 main.container {
     position: absolute;
     top: 10vh;
+    right: 0px;
+    width: 10vw;
 }
 
 article {
@@ -10,34 +12,34 @@ article {
     padding: 50px;
 }
 
-
-
 /* //////////////////////////////////// */
 /* Colors */
 /* //////////////////////////////////// */
 #about {
     background-color: var(--darkpurple);
-    color: var(--tea);
 }
 #project-1 {
     background-color: var(--purple);
-    color: var(--tea);
 }
 #project-2 {
     background-color: var(--lavender);
+}
+
+#about, #project-1, #project-2 {
     color: var(--tea);
 }
+
 #project-3 {
     background-color: var(--teal);
-    color: var(--black);
 }
 #project-4 {
     background-color: var(--moss);
-    color: var(--black);
-
 }
 #project-5 {
     background-color: var(--tea);
+}
+
+#project-3, #project-4, #project-5 {
     color: var(--black);
 }
 
@@ -47,8 +49,6 @@ article {
 
 section {
     padding: 10px;
-    width: 3vw;
-    transition: width 2s;
     align-items: flex-start;
     justify-content: center;
 }
@@ -64,13 +64,23 @@ section {
 /* Hover Interaction */
 /* //////////////////////////////////// */
 
-body > div + div:hover article {
-    flex: initial; 
-    width: 10%;
+/* Holds all of the panels */
+main:hover {
+    width:100vw;
 }
+
+/* the pantels */
+section {
+    width: 3vw;
+    transition: width 1s;
+}
+
 section:hover {
-    width: 85%;
+    width:85vw;
+    transition: ease 1s;
 }
+
+/* The content inside of the panel */
 section > article {
     opacity: 0; 
     transition: opacity 1s ease 0s;
