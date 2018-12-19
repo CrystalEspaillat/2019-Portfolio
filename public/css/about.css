@@ -1,29 +1,12 @@
-#about {
-  flex-direction: row;
-  flex-grow: 1;
+.home {
+    background-image: url("/public/img/home.png");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 35px 10px;
+    visibility: hidden;
 }
-
-/* //////////////////////////////////// */
-/* Section Text */
-/* //////////////////////////////////// */
-
-.about-content {
-    /*The copy*/
-    margin: 30px;
-    flex-direction: column;
-    color: var(--tea);
-}
-
-h6 {
-    font-size: 5em;
-    line-height: 1em;
-    margin: 50px 0px;
-}
-
-p {
-    color: var(--tea);
-}
-
 
 /* //////////////////////////////////// */
 /* Image */
@@ -41,10 +24,77 @@ p {
     margin-left: 50px;
 }
 
+/* Tablet */
+@media only screen and (max-width:768px) {
+
+    .about-img {
+        width: 100vw;
+        height: 30vh;
+        margin-left: 0px;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width:736px) {
+
+    .about-img {
+        width: 100vw;
+        height: 30vh;
+        margin-left: 0px;
+    }
+}
+
+/* //////////////////////////////////// */
+/* Section Text */
+/* //////////////////////////////////// */
+
+.about-content {
+    margin: 30px;
+    flex-direction: column;
+    color: var(--tea);
+}
+
+h6 {
+    font-size: 5em;
+    line-height: 1em;
+    margin: 50px 0px;
+}
+
+p {
+    color: var(--tea);
+}
+
+/* Tablet */
+@media only screen and (max-width:768px) {
+    .about-content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    h6 {
+        font-size: 2em;
+        line-height: 1em;
+        margin: 20px 0px;
+    }
+
+}
+
+/* Phone */
+@media only screen and (max-width:736px) {
+
+    .about-content {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 /* //////////////////////////////////// */
 /* CTA Grid */
 /* //////////////////////////////////// */
 
+.cta {
+    flex-direction: row;
+}
 .cta-group {
     flex-direction: column;
     align-items: center;
@@ -57,6 +107,35 @@ p {
     flex-direction: column;
     text-align: center;
     margin-top: 20px;
+}
+
+/* Tablet */
+@media only screen and (max-width:768px) {
+
+    .cta {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+/* Phone */
+@media only screen and (max-width:736px) {
+
+    .cta {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-group {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
 }
 
 /* //////////////////////////////////// */
@@ -90,6 +169,14 @@ p {
     background: var(--tea);
     width:20%;
 
+}
+
+/* Tablet */
+
+@media only screen and (max-width:768px) {
+    .work-group {
+        display: none;
+    }
 }
 
 /* //////////////////////////////////// */
@@ -126,7 +213,6 @@ p {
 
 .social-box {
     flex-direction: column;
-    z-index: 1;
 }
 
 i {

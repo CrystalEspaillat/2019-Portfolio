@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background: var(--darkpurple);
-}
-
 div {
     display: flex;
 }
@@ -32,53 +25,6 @@ body {
 
 p {
     margin-bottom: 20px;
-}
-
-/* //////////////////////////////////// */
-/* Main Layout for Desktop */
-/* //////////////////////////////////// */
-
-header {
-    height: 10vh;
-}
-
-main.container {
-    display: flex;
-    width: 100vw;
-    height: 90vh;
-    justify-content: flex-end;
-}
-
-/* //////////////////////////////////// */
-/* Main Layout for Tablet */
-/* //////////////////////////////////// */
-@media(max-width:768px) {
-
-    /* main.container {
-        flex-direction: column;
-        flex-grow: 1;
-    }
-
-    section:hover {
-        width: 100vw;
-        height: 100vh;
-    } */
-}
-
-/* //////////////////////////////////// */
-/* Main Layout for Mobile */
-/* //////////////////////////////////// */
-@media(max-width:736px) {
-
-    /* main.container {
-        flex-direction: column;
-        flex-grow: 1;
-    }
-
-    section:hover {
-        width: 100vw;
-        height: 100vh;
-    } */
 }
 
 

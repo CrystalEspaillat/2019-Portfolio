@@ -16,9 +16,16 @@ header h1 {
     margin-bottom: 0px;
 }
 
+/* //////////////////////////////////// */
+/* Main Layout for Tablet */
+/* //////////////////////////////////// */
+@media only screen and (max-width:768px) {
+
+}
+
+/* //////////////////////////////////// */
 /* Main Layout for Mobile */
-@media(max-width:768px) {
-    nav a {
-    }
+/* //////////////////////////////////// */
+@media only screen and (max-width:736px) {
 
 }

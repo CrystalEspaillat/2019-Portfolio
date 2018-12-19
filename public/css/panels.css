@@ -1,27 +1,15 @@
-/* Holds all of the panels */
-main {
-    position: absolute;
-    top: 11vh;
-    right: 0px;
-    width: 100vw;
-    display: flex;
-    justify-content: flex-end;
-    height: 100vh;
+/* //////////////////////////////////// */
+/* Open/Close Project Panels */
+/* //////////////////////////////////// */
+
+.active {
+    flex-grow: 1;
+    width: 90vw;
 }
 
-/* The panels */
-section {
-    padding: 10px;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-/* The content inside of the panels */
-article {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 50px;
+.inactive {
+    flex-grow: 0;
+    width: 3vw;
 }
 
 /* //////////////////////////////////// */
@@ -37,13 +25,22 @@ article {
     transform: rotate(90deg);
     transform-origin: left bottom 0;
     float: left;
-    width: 400px;
+    width: 100%;
     position: absolute;
+}
+
+.close {
+    width: 40px;
+    height: 40px;
+    float: right;
+    font-size: 2em;
+    cursor: pointer;
 }
 
 .project-img {
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .project-img img {
     width: 600px;
@@ -62,6 +59,40 @@ article {
 /* Text link */
 .colleagues {
     color: var(--tea);
+}
+
+/* Tablet */
+
+@media only screen and (max-width:768px) {
+    .label {
+        display: none;
+    }
+
+    .close {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width:736px) {
+
+    .project-img {
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .project-img img {
+        width: 100%;
+    }
+
+    .project-copy {
+        width: 100%;
+    }
+
+    .project-copy p {
+        width: 100%;
+    }
 }
 
 /* //////////////////////////////////// */

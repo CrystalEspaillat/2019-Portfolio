@@ -1,0 +1,102 @@
+/* //////////////////////////////////// */
+/* Main Layout for Desktop */
+/* //////////////////////////////////// */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--darkpurple);
+}
+
+/* holds about and panels */
+main {
+    display: flex;
+    position: absolute;
+    top: 11vh;
+    right: 0px;
+    width: 100vw;
+}
+
+#about {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+/* The panels */
+section {
+    padding: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 3vw;
+}
+
+/* The content inside of the panels */
+article {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+/* //////////////////////////////////// */
+/* Main Layout for Tablet */
+/* //////////////////////////////////// */
+@media only screen and (max-width:768px) {
+
+    body {
+        height: auto;
+        overflow: scroll;
+    }
+
+    /* holds about and panels */
+    main {
+        flex-direction: column;
+    }
+
+    #about {
+        flex-direction: column;
+      }
+
+    /* The panels */
+    section {
+        width: 100vw;
+    }
+
+    /* The content inside of the panels */
+    article {
+        flex-direction: column;
+    }
+}
+
+/* //////////////////////////////////// */
+/* Main Layout for Mobile */
+/* //////////////////////////////////// */
+@media only screen and (max-width:736px) {
+
+    /* holds about and panels */
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        overflow: scroll;
+    }
+
+    #about {
+        flex-direction: column;
+      }
+
+    /* The panels */
+    section {
+        width: 100%;
+    }
+
+    /* The content inside of the panels */
+    article {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 50px;
+    }
+}

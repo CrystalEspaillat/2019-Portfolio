@@ -1,12 +1,50 @@
 $(document).ready(function() {
 
-    // Hover effect for about section
+    // /////////////////////////////////////
+    // Panels 
+    // /////////////////////////////////////
 
-    $("section").hover(function() {
-        $("#about").addClass("hover");
-    }, function() {
-        $("#about").removeClass("hover");
+    $(".label").on("click", function() {
+        $( this ).parents("section")
+            .addClass( "active" )
+            .css("transition", "ease .5s")
+            .siblings().removeClass("active");
+        $("#about").css("width", "3vw");
+        $(".about-content").css("opacity", "0").css("transition", "ease .25s");
+        $(".home").css("visibility", "visible");
     });
+
+    $(".close").on("click", function() {
+        $( this ).parents("section").removeClass("active");
+        $(".about-content").css("opacity", "1").css("transition", "ease .25s");
+        $(".home").css("visibility", "hidden");
+
+    });
+
+    $("#about").on("click", function() {
+        $("#about").css("width", "85vw");
+        $(".about-content").css("opacity", "1").css("transition", "ease .25s");
+        if ($("section").hasClass("active") === true) {
+            $("section").removeClass("active");
+        }
+        $(".home").css("visibility", "hidden");
+
+    });
+
+    $("header").on("click", function() {
+        $("#about").css("width", "85vw");
+        $(".about-content").css("opacity", "1").css("transition", "ease .25s");
+        if ($("section").hasClass("active") === true) {
+            $("section").removeClass("active");
+        }
+        $(".home").css("visibility", "hidden");
+    });
+
+     
+
+    // /////////////////////////////////////
+    // About Page 
+    // /////////////////////////////////////
 
     // Click event for mail
     $(".resume").on("click", function() {
@@ -17,7 +55,6 @@ $(document).ready(function() {
     $(".contact").on("click", function() {
         window.location = "mailto:crys.espaillat@gmail.com";        
     });
-
 
     //Click event for social link divs
 
