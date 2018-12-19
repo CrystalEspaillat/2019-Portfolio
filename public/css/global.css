@@ -21,6 +21,8 @@ h6 {
 
 body {
     font-family: "Raleway";
+    display: flex;
+    flex-direction: column;
 }
 
 p {

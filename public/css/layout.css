@@ -52,6 +52,7 @@ article {
     /* holds about and panels */
     main {
         flex-direction: column;
+        position: static;
     }
 
     #about {
@@ -81,6 +82,8 @@ article {
         width: 100vw;
         height: auto;
         overflow: scroll;
+        position: static;
+        margin-top: 11vh;
     }
 
     #about {
@@ -99,4 +102,6 @@ article {
         justify-content: flex-start;
         padding: 50px;
     }
+
+    
 }
